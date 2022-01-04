@@ -1,0 +1,62 @@
+snippet func "Function"
+function func(args) {
+
+}
+endsnippet
+snippet arrfunc "Arrow function"
+const arrfunc = (args) => { 
+
+}
+endsnippet
+snippet httprequest "Makes an XMLHttpRequest including functions for onreadystatechange and opening/sending the request"
+let httpRequest = new XMLHttpRequest()
+httpRequest.onreadystatechange = () => {
+
+}
+function openRequest(method, link) {
+httpRequest.open(method, link, true)
+}
+function sendRequest(body = null) {
+httpRequest.send(body)
+}
+endsnippet
+snippet fetch "Makes a fetch request (defaulted to a data.json) with a promise handler to recieve" 
+fetch("data.json")
+.then(response => response.json())
+.then(data => recievedData = JSON.parse(data))
+.then(() => console.log(recievedData))
+endsnippet
+snippet fetchsend "Makes a fetch request (defaulted to a data.json) with a promise handler to send"
+fetch("data.json" {
+method: "POST",
+body: JSON.stringify(bodyToSend),
+header: JSON.stringify(headerToSend)})
+.then(response => response.json())
+.then(data => recievedData = JSON.parse(data))
+.then(() => console.log(recievedData))
+endsnippet
+snippet object "Object snippet"
+const object = { 
+
+};
+endsnippet
+snippet array "Array snippet"
+const array = [
+
+]
+endsnippet
+snippet iddom "Dom for ID"
+document.querySelector("#");
+endsnippet
+snippet classdom "Dom for class"
+document.querySelectorAll(".");
+endsnippet
+snippet class "OOP class"
+class name {
+constructor(args) {
+
+}
+}
+endsnippet
+
+
