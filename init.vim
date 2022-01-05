@@ -1,5 +1,5 @@
 filetype indent off
-set number
+set noautoindent
 " Specify direrectory
 call plug#begin('~/.vim/plugged')
 Plug 'SirVer/ultisnips'
